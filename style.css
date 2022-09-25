@@ -1,0 +1,32 @@
+body {
+	font-family: Arial;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	padding: 15px;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 15px;
+}
+
+button {
+	padding: 10px 24px;
+}
+.button-div {
+	padding: 20px;
+}
+
+img {
+	max-width:80%;
+}
