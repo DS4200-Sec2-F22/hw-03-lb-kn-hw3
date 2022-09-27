@@ -13,9 +13,10 @@
 
     <div class="flex-column">
         <div id="row1" class="flex-row">
-            <div id="img1">
+            <div id="img1" class="img-div">
                 <img src='img/vis1.png'>
             </div>
+
             <div class="buttons">
                 <div class="button-div">
                     <button type="button" id="button1-MC" onClick="ShowText('button1-MC-text','button1-MC')">
@@ -35,15 +36,15 @@
                                 <li>Color hue represents a categorical attribute: party affiliation</li>
                                 <li>This is a good mapping because it clearly shows what category each state is in using colors that people already associate with these categories.</li>
                             </ul>
-                            <li>Horizontal Position</li>
+                            <li>Length</li>
                             <ul>
-                                <li>Position on a common scale represents a quantitative attribute: projected electoral votes for each party</li>
-                                <li>This is a good mapping because it's very clear what is trying to be communicated, and  ...</li>
+                                <li>Length represents a quantitative attribute: projected electoral votes for each party</li>
+                                <li>This is a good mapping because it's very clear what is trying to be communicated, where larger length means grater number of votes. </li>
                             </ul>
                         </ul>
                     </div>
-
                 </div>
+
                 <div class="button-div">
                     <button type="button" id="button1-colors" onClick="ShowText('button1-colors-text','button1-colors')">
                         Reveal Colormap(s)
@@ -58,15 +59,15 @@
                             </ul>
                         </ul>
                     </div>
-
-
                 </div>
+
             </div>
         </div>
         <div id="row2" class="flex-row">
-            <div id="img2">
+            <div id="img2" class="img-div">
                 <img src='img/vis2.png'>
             </div>
+
             <div class="buttons">
                 <div class="button-div">
                     <button type="button" id="button2-MC" onClick="ShowText('button2-MC-text','button2-MC')">
@@ -93,8 +94,8 @@
                             </ul>
                         </ul>
                     </div>
-
                 </div>
+
                 <div class="button-div">
                     <button type="button" id="button2-colors" onClick="ShowText('button2-colors-text','button2-colors')">
                         Reveal Colormap(s)
@@ -105,7 +106,7 @@
                         <ul>
                             <li>Sequential</li>
                             <ul>
-                                <li>This is an okay mapping choice because it is the best way to show that the data (score) lies along a continuum, but it was poorly excecuted since average is difficult to see and the different hues get in the way.</li>
+                                <li>This is an good mapping choice because it is the best way to show that the data (score) lies along a continuum, however it was poorly excecuted since average is difficult to see and the different hues get in the way.</li>
                             </ul>
                             <li>Categorical</li>
                             <ul>
@@ -113,8 +114,8 @@
                             </ul>
                         </ul>
                     </div>
-
                 </div>
+
             </div>
         </div>
     </div>
@@ -122,17 +123,19 @@
     <script src="hw-03.js"></script>
 
     <h2>Acknowledgements</h2>
-    <ul>
-        <li>https://www.w3schools.com/howto/howto_css_two_columns.asp</li>
-        <li>https://www.w3schools.com/css/css3_buttons.asp</li>
-        <li>https://www.javatpoint.com/javascript-onclick-event</li>
-        <li>https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_date</li>
-        <li>https://dmitripavlutin.com/javascript-function-parameters/#:~:text=A%20JavaScript%20function%20can%20have%20any%20number%20of%20parameters.&text=The%203%20functions%20above%20were,than%20the%20number%20of%20parameters.</li>
-        <li>https://stackoverflow.com/questions/8184440/how-do-i-change-style-display-from-none-to-inline-when-button-is-clicked</li>
-        <li>https://www.w3schools.com/jsref/prop_style_display.asp</li>
-        <li>https://tutorial.eyehunts.com/js/how-to-pass-parameter-in-javascript-function-from-html-example-code/#:~:text=Use%20the%20onclick%20attribute%20in,the%20JavaScript%20function%20from%20HTML.</li>
-        <li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax</li>
-    </ul>
+    <div id="acknowledgements">
+        <ul>
+            <li>https://www.w3schools.com/howto/howto_css_two_columns.asp</li>
+            <li>https://www.w3schools.com/css/css3_buttons.asp</li>
+            <li>https://www.javatpoint.com/javascript-onclick-event</li>
+            <li>https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_date</li>
+            <li>https://dmitripavlutin.com/javascript-function-parameters/</li>
+            <li>https://stackoverflow.com/questions/8184440/how-do-i-change-style-display-from-none-to-inline-when-button-is-clicked</li>
+            <li>https://www.w3schools.com/jsref/prop_style_display.asp</li>
+            <li>https://tutorial.eyehunts.com/js/how-to-pass-parameter-in-javascript-function-from-html-example-code/</li>
+            <li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax</li>
+        </ul>
+    </div>
 </body>
 
 </html>
