@@ -1,10 +1,6 @@
-function ShowText(elementID) {
-	document.getElementById(elementID).style.display="inline";
-}
 
-function RevealText(elementID) {
-	elementID = elementID
-	document.getElementById(elementID).onclick = function() {  
-		ShowText(elementID)
-	}
+
+function ShowText(elementID, buttonID) {
+	document.getElementById(elementID).style.display="inline";
+	document.getElementById(buttonID).style.display="none";
 }
