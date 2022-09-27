@@ -30,3 +30,7 @@ button {
 img {
 	max-width:80%;
 }
+
+.button-text {
+	display: none;
+}
