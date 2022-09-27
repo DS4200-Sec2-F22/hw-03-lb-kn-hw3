@@ -17,16 +17,48 @@
                 <img src='img/vis1.png'>
             </div>
             <div class="buttons">
-                <div id="button1-marks" class="button-div">
-                    <button type="button">
+                <div class="button-div">
+                    <button type="button" onClick="ShowText('button1-marks')">
                         Reveal Marks and Channels
                     </button>
 
+                    <div id="button1-marks" style="display: none;">
+                        <h3>Marks</h3>
+                        <ul>
+                            <li>Areas</li>
+                            <li>Lines</li>
+                        </ul>
+                        <h3>Channels</h3>
+                        <ul>
+                            <li>Color</li>
+                            <ul>
+                                <li>Color hue represents a categorical attribute: party affiliation</li>
+                                <li>This is a good mapping because it clearly shows what category each state is in using colors that people already associate with these categories</li>
+                            </ul>
+                            <li>Length or Horizontal Position</li>
+                            <ul>
+                                <li>Position on a common scale/length represents a quantitative attribute: projected electoral votes for each party</li>
+                                <li>This is a good mapping because position on a common scale is the most effective magnitude channel or ...</li>
+                            </ul>
+                        </ul>
+                    </div>
+
                 </div>
-                <div id="button1-colors" class="button-div">
-                    <button type="button">
+                <div class="button-div">
+                    <button type="button" onClick="ShowText('button1-colors')">
                         Reveal Colormap(s)
                     </button>
+
+                      <div id="button1-colors" style="display: none;">
+                        <h3>Colormap(s)</h3>
+                        <ul>
+                            <li>Categorical</li>
+                            <ul>
+                                <li>This is a good mapping because it clearly shows what category each state is in using colors that people already associate with these categories</li>
+                            </ul>
+                        </ul>
+                    </div>
+
 
                 </div>
             </div>
@@ -36,27 +68,70 @@
                 <img src='img/vis2.png'>
             </div>
             <div class="buttons">
-                <div id="button2-marks" class="button-div">
-                    <button type="button">
+                <div class="button-div">
+                    <button type="button" onClick="ShowText('button2-marks')">
                         Reveal Marks and Channels
                     </button>
 
+                    <div id="button2-marks" style="display: none;">
+                        <h3>Marks</h3>
+                        <ul>
+                            <li>Points</li>
+                        </ul>
+                        <h3>Channels</h3>
+                        <ul>
+                            <li>Color</li>
+                            <ul>
+                                <li>Color saturation represents a quantitative attribute: scoring value</li>
+                                <li>Color hue represents a categorical attribute: typical vs atypical scoring value</li>
+                                <li>This is a poor mapping because it is difficult to interpret what the significance is of the saturation</li>
+                            </ul>
+                            <li>Position</li>
+                            <ul>
+                                <li>Both horizontal and vertical position represent quantitative attributes: exit velocity & launch angle (respectively)</li>
+                                <li>This is a good mapping because it shows the magnitude in both measures and the relationship between these measures clearly and in a way that is easy to read and interpret</li>
+                            </ul>
+                        </ul>
+                    </div>
+
                 </div>
-                <div id="button2-colors" class="button-div">
-                    <button type="button">
+                <div class="button-div">
+                    <button type="button" onClick="ShowText('button2-colors')">
                         Reveal Colormap(s)
                     </button>
+
+                    <div id="button2-colors" style="display: none;">
+                        <h3>Colormap(s)</h3>
+                        <ul>
+                            <li>Sequential</li>
+                            <ul>
+                                <li>This is a poor mapping choice because it is nit very clear what value this information provides nor really what it means in he context of the graph</li>
+                            </ul>
+                            <li>Categorical</li>
+                            <ul>
+                                <li>This is an ok mapping because it does communicate the categories the points are in and helps to group points together</li>
+                            </ul>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="hw-03.js"></script>
+
     <h2>Acknowledgements</h2>
     <ul>
         <li>https://www.w3schools.com/howto/howto_css_two_columns.asp</li>
         <li>https://www.w3schools.com/css/css3_buttons.asp</li>
-        <li></li>
+        <li>https://www.javatpoint.com/javascript-onclick-event</li>
+        <li>https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_date</li>
+        <li>https://dmitripavlutin.com/javascript-function-parameters/#:~:text=A%20JavaScript%20function%20can%20have%20any%20number%20of%20parameters.&text=The%203%20functions%20above%20were,than%20the%20number%20of%20parameters.</li>
+        <li>https://stackoverflow.com/questions/8184440/how-do-i-change-style-display-from-none-to-inline-when-button-is-clicked</li>
+        <li>https://www.w3schools.com/jsref/prop_style_display.asp</li>
+        <li>https://tutorial.eyehunts.com/js/how-to-pass-parameter-in-javascript-function-from-html-example-code/#:~:text=Use%20the%20onclick%20attribute%20in,the%20JavaScript%20function%20from%20HTML.</li>
+        <li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax</li>
     </ul>
 </body>
 
