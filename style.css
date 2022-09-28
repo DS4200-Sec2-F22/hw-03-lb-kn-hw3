@@ -37,6 +37,10 @@ img {
 	max-width:80%;
 }
 
-.button-text {
+.hide-display {
 	display: none;
+}
+
+.inline-display {
+	display: inline;
 }
